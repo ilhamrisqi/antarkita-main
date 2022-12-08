@@ -42,4 +42,10 @@ class PagesController extends Controller
     {
         return view('pricelist');
     }
+
+
+    public function detail()
+    {
+        return view('detail');
+    }
 }

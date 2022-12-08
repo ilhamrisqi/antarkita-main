@@ -33,3 +33,8 @@ Route::get('/admin', [PagesController::class, 'admin'])
 
 Route::get('/pricelist', [PagesController::class, 'pricelist'])
     ->name('pricelist');
+
+
+Route::get('/detail', [PagesController::class, 'detail'])
+    ->name('detail');
+
