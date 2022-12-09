@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app-homepage')
 
 @section('title', 'Portofolio Kami')
 @section('head')

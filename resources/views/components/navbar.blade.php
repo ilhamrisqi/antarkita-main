@@ -1,27 +1,29 @@
 @php
     $current = 'block py-2 pr-4 pl-3 font-sans text-lg font-bold text-slate-900 bg-zinc-50 rounded md:hover:bg-transparent md:hover:text-blue-700 md:text-slate-900 md:p-0
-      md:dark:hover:text-slate-900 dark:text-slate-900 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
+      md:dark:hover:text-slate-900 md:dark:hover:bg-transparent
       transition ease-in-out delay-50 duration-200
       ';
 
     $notcurrent = 'block py-2 pr-4 pl-3 font-sans text-lg text-slate-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-slate-700 md:p-0
-      md:dark:hover:text-slate-400 dark:text-slate-900 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
+      md:dark:hover:text-slate-400 md:dark:hover:bg-transparent
       transition ease-in-out delay-50 duration-200
       ';
 @endphp
 <nav
-    class="bg-zinc-50 px-2 sm:px-4 py-2.5 dark:bg-border-zinc-50 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-zinc-50">
+    class="bg-zinc-50 px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200">
 
     <div class="container flex flex-wrap justify-between items-center mx-auto">
         <a href="{{route('index')}}" class="flex items-center">
             <img src="{{asset('images/AntarKitaLogoTransparent.png')}}" class="ml-5 h-5 sm:h-8" alt="Flowbite Logo">
-            {{-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-slate-900">AntarKita</span> --}}
+            {{-- <span class="self-center text-xl font-semibold whitespace-nowrap">AntarKita</span> --}}
         </a>
 
         <div class="flex md:order-2">
-            <a href="https://wa.me/6282226401130" class="mr-3 font-sans text-zinc-50 bg-slate-900 hover:bg-slate-700
+
+
+            <a href="{{ route('login') }}" class="mr-3 font-sans text-zinc-50 bg-slate-900 hover:bg-slate-700
         focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium
-        rounded-lg text-sm px-5 py-2 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55">
+        rounded-lg text-sm px-5 py-2 text-center inline-flex items-center">
 {{--                <svg class="md:mr-2 w-4 h-4 fill-slate-50" aria-hidden="true" focusable="false" data-prefix="fab"--}}
 {{--                     role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">--}}
 {{--                    <path fill-rule="evenodd"--}}
@@ -29,11 +31,12 @@
 {{--                          clip-rule="evenodd"/>--}}
 {{--                </svg>--}}
                 <span
-                    class="self-center text-sm font-semibold whitespace-nowrap hidden md:block dark:text-slate-900 md:dark:text-zinc-50">Log in</span>
+                    class="self-center text-sm font-semibold whitespace-nowrap hidden md:block md:dark:text-zinc-50">Log in</span>
             </a>
 
+
             <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center px-4 py-2 rounded-lg border-2 border-slate-900
-        md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-zinc-50 dark:focus:ring-zinc-50"
+        md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
                     aria-controls="navbar-sticky" aria-expanded="false">
                 <svg class="w-4 h-4 fill-slate-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
@@ -43,7 +46,7 @@
         </div>
 
         <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <ul class="flex flex-col p-4 mt-4 bg-zinc-50 rounded-lg border border-zinc-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-zinc-50 md:dark:bg-zinc-50 dark:border-zinc-50">
+            <ul class="flex flex-col p-4 mt-4 bg-zinc-50 rounded-lg border border-zinc-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white md:dark:bg-zinc-50">
                 <li>
                     <a href="{{route('index')}}"
                        class="{{ request()->routeIs('index') ? $current : $notcurrent }}">

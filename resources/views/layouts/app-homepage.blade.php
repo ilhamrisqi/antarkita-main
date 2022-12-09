@@ -15,13 +15,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQEXKKP4L5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
-
         gtag('js', new Date());
-
         gtag('config', 'G-RQEXKKP4L5');
     </script>
 
@@ -55,13 +52,12 @@
             "https://antarkitaphotography.com/"
           ]
         }
-
     </script>
 </head>
 <body class="font-sans antialiased">
 <div class="min-h-screen bg-zinc-50">
     {{-- Navbar inclusion --}}
-
+    <x-navbar/>
 
     <!-- Page Heading -->
     @if (isset($header))
@@ -69,19 +65,18 @@
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                 {{ $header }}
             </div>
-
         </header>
     @endif
 
     <!-- Page Content -->
-{{--    <main>--}}
-{{--        @yield('container')--}}
-{{--    </main>--}}
+    <main>
+        @yield('container')
+    </main>
 
-{{--    <div class="">--}}
-{{--        <x-contactusfooter/>--}}
-{{--    </div>--}}
-{{--    <x-footer/>--}}
+    <div class="pt-40">
+        <x-contactusfooter/>
+    </div>
+    <x-footer/>
 </div>
 </body>
 </html>

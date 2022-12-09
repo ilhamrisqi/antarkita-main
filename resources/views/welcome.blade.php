@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.app-homepage')
 
-@section('title', 'Homepage')
+@section('title', 'Dashboardpage')
 @section('head')
     <link rel="canonical" href="{{route('index')}}">
     <meta name="keyword"

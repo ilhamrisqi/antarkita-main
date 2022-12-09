@@ -4,13 +4,13 @@
             <img class="object-contain h-24 w-48"
                  src="images/AntarKitaLogoTransparent.png" alt="AntarKita Logo">
         </div>
-        <span class="block text-md text-center text-gray-500 dark:text-slate-900 my-2 font-medium">Tertarik?</span>
-        <span class="block text-md text-center text-gray-500 dark:text-slate-900 my-2 font-semibold">Kontak kami untuk mendiskusikan proyek anda!</span>
+        <span class="block text-md text-center text-gray-500 my-2 font-medium">Tertarik?</span>
+        <span class="block text-md text-center text-gray-500 my-2 font-semibold">Kontak kami untuk mendiskusikan proyek anda!</span>
 
         <div class="flex justify-center">
             <button type="button" class="flex justify-center mb-14 font-sans font-medium text-slate-900 bg-zinc-50 text-sm border-slate-900 border-2
             focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50
-            rounded-lg px-5 py-2 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55">
+            rounded-lg px-5 py-2 text-center inline-flex items-center">
                 <svg class="md:mr-2 w-4 h-4 fill-slate-900" aria-hidden="true" focusable="false" data-prefix="fab"
                      role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
                     <path fill-rule="evenodd"
@@ -18,7 +18,7 @@
                           clip-rule="evenodd"/>
                 </svg>
                 <span
-                    class="self-center block text-sm font-semibold whitespace-nowrap dark:text-slate-900 md:dark:text-slate-900">Kontak via WhatsApp</span>
+                    class="self-center block text-sm font-semibold whitespace-nowrap md:dark:text-slate-900">Kontak via WhatsApp</span>
             </button>
         </div>
     </div>

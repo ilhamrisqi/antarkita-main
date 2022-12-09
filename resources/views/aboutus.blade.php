@@ -1,5 +1,7 @@
 {{-- Extending something --}}
-@extends('layouts.app')
+@extends('layouts.app-homepage')
+
+{{-- Setting the title --}}
 
 @section('title', 'Tentang Kami')
 @section('head')

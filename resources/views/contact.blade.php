@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app-homepage')
 
 @section('title', 'Kontak Kami')
 @section('head')
