@@ -35,7 +35,7 @@ class PagesController extends Controller
 
     public function admin()
     {
-        return view('admin');
+        return view('dashboard');
     }
 
     public function pricelist()
